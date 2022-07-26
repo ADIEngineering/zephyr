@@ -14,3 +14,9 @@ config GPIO_XEC_V2
 	depends on SOC_SERIES_MEC172X
 	help
 	  Enable the Microchip XEC gpio V2 driver.
+
+config BGPO_XEC
+	bool "XEC Microchip BGPO driver"
+	depends on SOC_SERIES_MEC172X
+	help
+	  Enable the Microchip XEC bgpo driver.

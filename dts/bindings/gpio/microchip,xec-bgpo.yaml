@@ -1,0 +1,22 @@
+# Copyright (c) 2019, Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+
+description: Microchip CEC/MEC BGPO node
+
+compatible: "microchip,xec-bgpo"
+
+include: [gpio-controller.yaml, base.yaml]
+
+properties:
+    reg:
+      required: true
+
+    label:
+      required: true
+
+    "#gpio-cells":
+      const: 2
+
+gpio-cells:
+  - pin
+  - flags
