@@ -14,6 +14,8 @@
 /* 144-pin package I2C port masks */
 #if defined(CONFIG_SOC_MEC172X_NSZ)
 #define MEC_I2C_PORT_MASK	0xFEFFU
+#elif defined(CONFIG_SOC_MEC172X_NLJ)
+#define MEC_I2C_PORT_MASK	0xFFFFU
 #elif defined(CONFIG_SOC_MEC1501_HSZ)
 #define MEC_I2C_PORT_MASK	0xFEFFU
 #elif defined(CONFIG_SOC_MEC1701_QSZ)
