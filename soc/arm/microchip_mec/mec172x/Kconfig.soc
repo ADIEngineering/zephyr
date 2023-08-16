@@ -72,3 +72,10 @@ choice
 		  JTAG port in SWD mode and SWV as tracing method.
 		  I2C09 cannot be used. ADC00-03 can be used.
 endchoice
+
+config SOC_SLEEP_STATE_DEBUG_FUNCTION
+	bool "Platform provides a debug indicator for sleep modes"
+	depends on PM
+	help
+	  Platform may provide an indication of entering/exiting sleep modes by
+	  defining board-specific void function pm_debug_function(uint32_t).
